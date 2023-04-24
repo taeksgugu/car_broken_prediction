@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="68dp"
+      android:text="차량에 등록된 \n실소유자명을 입력해주세요."
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/plateNumberEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="23dp"
+      android:hint="차량번호를 입력하세요"
+      android:inputType="textMultiLine"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      tools:ignore="MissingConstraints" />
+
+  <RadioGroup
+      android:id="@+id/ownershipRadioGroup"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="21dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/plateNumberEditText"
+      tools:ignore="MissingConstraints">
+
+    <RadioButton
+        android:id="@+id/personalRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="개인"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/corporateRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="법인 / 리스"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
+
+  </RadioGroup>
+
+  <EditText
+      android:id="@+id/ownerNameEditText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:hint="소유자명을 입력하세요"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ownershipRadioGroup"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/btnShowDialog"
+      android:layout_width="388dp"
+      android:layout_height="61dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="8dp"
+      android:backgroundTint="@color/white"
+      android:text="카테고리 선택하기"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/quoteButton"
+      app:layout_constraintStart_toStartOf="parent"
+      app:strokeColor="@android:color/black"
+      app:strokeWidth="2dp" />
+
+  <Button
+      android:id="@+id/quoteButton"
+      android:layout_width="250dp"
+      android:layout_height="60dp"
+      android:layout_marginStart="88dp"
+      android:layout_marginTop="68dp"
+      android:backgroundTint="#0F68F8"
+      android:text="Dr.Po 시작하기"
+      android:textSize="24sp"
+      app:cornerRadius="90dp"
+      app:layout_constraintStart_toStartOf="@+id/ownerNameEditText"
+      app:layout_constraintTop_toBottomOf="@+id/ownerNameEditText"
+      tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

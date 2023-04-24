@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102745876799",
+    "project_id": "kotlin-1f766",
+    "storage_bucket": "kotlin-1f766.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102745876799:android:9e93d75134f2dae03c4b8a",
+        "android_client_info": {
+          "package_name": "com.chobo.selectimage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102745876799-8okvmnhnmd5bl4vnhhajgmugff89kqan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyRcR04zDB-Bgo9wqft612PW5ny_XbxUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102745876799-8okvmnhnmd5bl4vnhhajgmugff89kqan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

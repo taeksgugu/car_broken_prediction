@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Select image</string>
+    <string name="accept_all_permissions_message">Accept all permissions.</string>
+    <string name="capture_image_message">Capture image</string>
+    <string name="take_image_from_gallery_message">Take image from gallery</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="km">km</string>
+    <string name="repairname">정비소명</string>
+    <string name="_1_629_266">1,629,266</string>
+    <string name="benz">BENZ</string>
+    <string name="front_fender">front fender</string>
+</resources>
